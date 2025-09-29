@@ -72,8 +72,8 @@ def predict_email(assunto, conteudo, arquivo):
 
     # Sugestões automáticas de resposta
     responses = {
-        "Produtivo": "Obrigado pelo contato. Ficamos felizes em receber sua mensagem.",
-        "Improdutivo": "Olá! Sua solicitação foi recebida e será analisada em breve. Retornaremos com novidades."
+        "Produtivo": "Obrigado pelo contato.\nEm breve a sua mensagem será respondida. Aguarde!\n\nAtenciosamente, Fulano de Tal.",
+        "Improdutivo": "Olá! A sua mensagem foi recebida. Muito obrigado!"
     }
 
     result += f"### Sugestão de resposta:\n{responses[result_label]}\n\n"

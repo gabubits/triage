@@ -35,6 +35,4 @@ Para testar a aplicação, ela está deployada e hospedada no Hugging Face Space
 - [`triage_model_training_process.ipynb`](triage_model_training_process.ipynb) - Arquivo com a especificação e detalhamento de todo o processo de treinamento do modelo DistilBERT base multilingual para especializa-lo em ser um classificador de e-mails.
 - [`triage_frontend.py`](triage_frontend.py) - Arquivo de interface baseada em Gradio. Nesse arquivo é especificado o uso do modelo diretamente do Hugging Faces Transformers, o processo de predição de um novo e-mail e o design da interface, focado na simplicidade e nas funcionalidades.
 
-## Pastas principais
-
-- [triage_model](triage_model) - Arquivos resultantes do treinamento e que foram upados no Hugging Face Transformers.
+**Observação**: O GitHub não permite arquivos maiores que 25MB, portanto todos os arquivos relacionados ao modelo treinado estão na página no Hugging Face Tranformers.

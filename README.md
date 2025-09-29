@@ -33,7 +33,7 @@ Para testar a aplicação, ela está deployada e hospedada no Hugging Face Space
 
 - [`dataset.csv`](dataset.csv) - Arquivo com a especificação do dataset usado para treinamento. Esse detaset é um conjunto de 391 e-mails classificados entre produtivo e improdutivo. Foi gerado de forma sintética e orientada com o apoio do Gemini.
 - [`triage_model_training_process.ipynb`](triage_model_training_process.ipynb) - Arquivo com a especificação e detalhamento de todo o processo de treinamento do modelo DistilBERT base multilingual para especializa-lo em ser um classificador de e-mails.
-- [triage_frontend.py](triage_frontend.py) - Arquivo de interface baseada em Gradio. Nesse arquivo é especificado o uso do modelo diretamente do Hugging Faces Transformers, o processo de predição de um novo e-mail e o design da interface, focado na simplicidade e nas funcionalidades.
+- [`triage_frontend.py`](triage_frontend.py) - Arquivo de interface baseada em Gradio. Nesse arquivo é especificado o uso do modelo diretamente do Hugging Faces Transformers, o processo de predição de um novo e-mail e o design da interface, focado na simplicidade e nas funcionalidades.
 
 ## Pastas principais
 

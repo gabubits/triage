@@ -60,9 +60,8 @@ def predict_email(assunto, conteudo, arquivo):
     
     # Montagem da resposta formatada
     result_label = label_names[predicted_class]
-    confidence = float(probs[predicted_class])
     emoji = emoji_map.get(result_label, "")
-    result = f"## Resultado: {emoji} {result_label.upper()} ({confidence*100:.1f}%)\n\n"
+    result = f"## Resultado: {emoji} {result_label.upper()}\n\n"
 
     # Inclui assunto e conteúdo recebidos
     if assunto.strip():
@@ -78,16 +77,6 @@ def predict_email(assunto, conteudo, arquivo):
     }
 
     result += f"### Sugestão de resposta:\n{responses[result_label]}\n\n"
-    
-    # Tabela com distribuição das probabilidades
-    result += "### Distribuição de probabilidade\n"
-    result += "|Categoria|Probabilidade|\n|-|-|\n"
-
-    sorted_probs = [(label, float(probs[i])) for i, label in enumerate(label_names)]
-    sorted_probs.sort(key=lambda x: x[1], reverse=True)
-
-    for label, prob in sorted_probs:
-        result += f"|{label}|{prob*100:.1f}%|\n"
         
     return result
 
